@@ -1,0 +1,133 @@
+body{
+    background-color: #f7e4d4;
+    position: relative;
+    /* height: 100vh;
+    width: 100vw; */
+    
+}
+
+h1{
+    position: fixed;
+    left: 41%;
+    top: 7%;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #467745
+}
+
+.first-field{
+    position: absolute;
+    left: 30%;
+    top: 150px;
+    height: 64px;
+    width: 480px;
+    border: none;
+}
+
+.comment{
+    position: absolute;
+    left: 30%;
+    top: 240px;
+    height: 120px;
+    width: 480px;
+    border: none;
+}
+
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    color: #467745;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.kocka{
+    position: absolute;
+    left: 30%;
+    top: 420px;
+    border: #ffff;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+h6{
+    position: absolute;
+    left: 34%;
+    top: 388px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    color: #467745;
+}
+
+.btn{
+    font-family: 'EB Garamond', serif;
+    font-size: 21px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 480px;
+    height: 80px;
+    width: 280px;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 0.2em;
+    background-color: #467745;
+    color: #f7e4d4;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 520px) {
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    h1{
+        font-size: 30px;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+    }
+
+    .first-field{
+        position: absolute;
+        left: 20px;
+        width: 100% - 40px;
+    }
+
+    .comment{
+        position: absolute;
+        left: 20px;
+        max-width: 100% - 40px;
+    }
+
+    .kocka{
+        position: absolute;
+        left: 20px;
+    }
+
+    h6{
+        position: absolute;
+        left: 60px;
+        top: 380px;
+        font-size: calc(16px + 0.390625vw);
+    }
+    
+    .btn{
+        position: absolute;
+        left: 40px;
+        top: 550px;
+
+    }
+
+}
